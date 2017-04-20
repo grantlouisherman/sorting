@@ -9,6 +9,10 @@ describe('Bubble Sort', function(){
     expect( bubbleSort([2,1,5]) ).toEqual( [1,2,5] );
   });
 
+  it('handles an one element array', function(){
+    expect( bubbleSort([100]) ).toEqual( [100] );
+  });
+
    it('handles an ten element array', function(){
     expect( bubbleSort([100,5,3,4,14,29,18,7]) ).toEqual( [3,4,5,7,14,18,29,100] );
   });
